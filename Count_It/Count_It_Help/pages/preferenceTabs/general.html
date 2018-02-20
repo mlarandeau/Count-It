@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>General Preferences</title>
+<style>
+#header {
+	font-size : 35px;
+	font-weight : bold;
+}
+.category {
+	font-size : 25px;
+}
+.note {
+	font-weight : bold;
+}
+</style>
+</head>
+<body>
+	<div id="header">General Preferences</div>
+	<div>
+		<br/><br/>
+		<div class="category">Game Tracking:</div>
+		<div>
+			<ul>
+				<li>Auto Start:
+					<br/>When selected, Count It will automatically search for and begin tracking the frame rate of any game that has previously been added to Count It once it is launched.
+							With auto start on, there is no need to manually click "Launch" or "Start" from the main toolbar.
+					<br/><br/>
+				</li>
+				<li>Auto Stop:
+					<br/>When selected, Count It will automatically stop tracking the frame rate once the game is closed.  When deselected, when a game that is
+					being tracked closes, Count It will automatically start waiting for the game to relaunch.  This can be useful in situations in which a game's
+					launcher or other such process (i.e. graphics settings changes) force the game to relaunch.  In this situation, if auto stop is off, Count It
+					would automatically reconnect to the game.
+				</li>
+			</ul>
+		</div>
+		<br/>
+		<div>
+			<div class="category">Decimal Precision:</div>
+			<div>Formats the frame rate to display the specified number of digits to the right of the decimal.</div>
+		</div>
+		<br/><br/>
+		<div class="category">Sampling Rate:</div>
+		<div>
+			Adjusts the frequency that the frame rate is updated.  A higher sampling rate means that the frame rate is updated more often.
+		</div>
+        <br/><br/>
+        <div class="category">Save Directory:</div>
+        <div>
+            The directory that all app data and automatic recording session exports will be saved to.  Changing this directory will move
+            the existing files to the new location.
+        </div>
+	</div>
+</body>
+</html>

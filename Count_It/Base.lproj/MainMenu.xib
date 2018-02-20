@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Count_It" customModuleProvider="target">
+            <connections>
+                <outlet property="fps" destination="kx0-ua-Jjq" id="P4Y-uz-A1B"/>
+                <outlet property="menu" destination="3Np-Kd-sBN" id="CcK-cl-8H2"/>
+                <outlet property="tracer" destination="kNb-c9-jQD" id="qsy-1R-ELh"/>
+            </connections>
+        </customObject>
+        <customObject id="3Np-Kd-sBN" customClass="MainMenuController" customModule="Count_It" customModuleProvider="target">
+            <connections>
+                <outlet property="app" destination="Voe-Tx-rLC" id="OUG-TG-6OK"/>
+                <outlet property="menu" destination="AYu-sK-qS6" id="3ju-Pj-aRI"/>
+            </connections>
+        </customObject>
+        <customObject id="98i-ik-Q9E" customClass="ShareMenuDelegate" customModule="Count_It" customModuleProvider="target">
+            <connections>
+                <outlet property="app" destination="Voe-Tx-rLC" id="tUJ-xT-D7g"/>
+            </connections>
+        </customObject>
+        <customObject id="kNb-c9-jQD" customClass="TraceController" customModule="Count_It" customModuleProvider="target">
+            <connections>
+                <outlet property="app" destination="Voe-Tx-rLC" id="E9Q-nR-fgh"/>
+            </connections>
+        </customObject>
+        <customObject id="kx0-ua-Jjq" userLabel="FPS Controller" customClass="FPSController" customModule="Count_It" customModuleProvider="target">
+            <connections>
+                <outlet property="app" destination="Voe-Tx-rLC" id="EaA-Jz-bL5"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="Count It" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Count It" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About Count It" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
+                                <connections>
+                                    <action selector="showPreferencesWithSender:" target="Voe-Tx-rLC" id="Ygd-uI-6x7"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide Count It" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit Count It" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Game" id="Nss-ml-RSR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Game" autoenablesItems="NO" id="DfT-CB-iHO">
+                        <items>
+                            <menuItem title="Add Game" id="zIr-lP-iSn">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Add Game" id="r7m-eG-9Kb">
+                                    <items>
+                                        <menuItem title="Browse..." keyEquivalent="g" id="Qiy-rv-FDE">
+                                            <connections>
+                                                <action selector="addGameWithSender:" target="3Np-Kd-sBN" id="rvW-Oe-IF5"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Platform..." tag="1" keyEquivalent="G" id="oCB-ZC-p2F">
+                                            <connections>
+                                                <action selector="addGameWithSender:" target="3Np-Kd-sBN" id="cuL-uG-SC5"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Running..." tag="2" keyEquivalent="g" id="SmM-IW-Ebk">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="addGameWithSender:" target="3Np-Kd-sBN" id="e4M-Fi-gQg"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Remove Game" enabled="NO" keyEquivalent="d" id="QAZ-Tl-STs">
+                                <connections>
+                                    <action selector="removeGameWithSender:" target="3Np-Kd-sBN" id="I2Q-vC-AqO"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="crC-Wm-nrl"/>
+                            <menuItem title="Launch" enabled="NO" keyEquivalent="l" id="5g6-qt-ytI">
+                                <connections>
+                                    <action selector="startOrLaunchGameWithSender:" target="3Np-Kd-sBN" id="yE5-O6-ibo"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Start" tag="1" enabled="NO" keyEquivalent="s" id="HLt-ZN-Sjk">
+                                <connections>
+                                    <action selector="startOrLaunchGameWithSender:" target="3Np-Kd-sBN" id="zcR-Hq-0d4"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Stop" tag="2" enabled="NO" keyEquivalent="S" id="wmc-zt-Q5u">
+                                <connections>
+                                    <action selector="stopGameWithSender:" target="3Np-Kd-sBN" id="mgT-yC-6aq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Wait" tag="3" enabled="NO" keyEquivalent="w" id="ShV-rK-sLU">
+                                <connections>
+                                    <action selector="waitForGameWithSender:" target="3Np-Kd-sBN" id="ufz-54-SPi"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Cnr-Ol-FVY"/>
+                            <menuItem title="Attach to Process..." keyEquivalent="p" id="Jge-Gn-YCU">
+                                <connections>
+                                    <action selector="attachToProcessWithSender:" target="3Np-Kd-sBN" id="TDQ-ql-S3w"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Recording" id="f5V-hL-TNZ" userLabel="Recording">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Recording" autoenablesItems="NO" id="7fP-4u-Fxr">
+                        <items>
+                            <menuItem title="Export" enabled="NO" id="E1i-qA-sbo">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Export" id="bed-Fe-5gw">
+                                    <items>
+                                        <menuItem title="as csv..." enabled="NO" keyEquivalent="e" id="4lV-Bo-zRZ">
+                                            <connections>
+                                                <action selector="exportSessionAsCSVWithSender:" target="3Np-Kd-sBN" id="6sI-Oj-0Kz"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="as png..." enabled="NO" keyEquivalent="E" id="wvC-ic-OnS">
+                                            <connections>
+                                                <action selector="exportSessionAsPNGWithSender:" target="3Np-Kd-sBN" id="8hw-sS-HFG"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="as jpeg" enabled="NO" keyEquivalent="e" id="TRr-jn-K6O">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="exportSessionAsJPEGWithSender:" target="3Np-Kd-sBN" id="oB7-2m-ZZZ"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Share" enabled="NO" id="z2X-yb-LrY" userLabel="Share">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Share" id="gde-mn-6ft" userLabel="Share">
+                                    <items>
+                                        <menuItem title="Item" enabled="NO" id="eTX-Q2-ZtH">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                    <connections>
+                                        <outlet property="delegate" destination="98i-ik-Q9E" id="ble-gN-aKs"/>
+                                    </connections>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="aFb-mF-oWc"/>
+                            <menuItem title="Remove Recording" enabled="NO" keyEquivalent="D" id="j78-qe-j2k">
+                                <connections>
+                                    <action selector="removeSessionWithSender:" target="3Np-Kd-sBN" id="H9E-X6-kZy"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="View" id="H8h-7b-M4v">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="View" id="HyV-fh-RgO">
+                        <items>
+                            <menuItem title="Show Graph" keyEquivalent="g" id="cgG-3v-4EB">
+                                <connections>
+                                    <action selector="toggleGraphViewWithSender:" target="3Np-Kd-sBN" id="MZL-NK-nYh"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" enabled="NO" id="0rS-w8-1Fd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Zoom" id="rHZ-Ae-7rF">
+                                    <items>
+                                        <menuItem title="Fit View" tag="1" enabled="NO" id="cYK-qo-nM5">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="zoomWithSender:" target="3Np-Kd-sBN" id="El7-Lb-14E"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Fit Width" tag="2" enabled="NO" id="wwF-O1-LAh">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="zoomWithSender:" target="3Np-Kd-sBN" id="5XM-r5-e91"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Fit Height" tag="3" enabled="NO" id="jwE-3o-waZ">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="zoomWithSender:" target="3Np-Kd-sBN" id="4Pi-rQ-MVC"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="z2V-Om-k9p"/>
+                            <menuItem title="Show Toolbar" keyEquivalent="t" id="snW-S8-Cw5">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="toggleToolbarShown:" target="-1" id="BXY-wc-z0C"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Customize Toolbar…" hidden="YES" id="1UK-8n-QPP">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="runToolbarCustomizationPalette:" target="-1" id="pQI-g3-MTW"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="aUF-d1-5bR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="VwT-WD-YPe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="FJe-zu-wgO"/>
+                            <menuItem title="Collection" state="on" keyEquivalent="0" id="hxk-xf-gA7">
+                                <connections>
+                                    <action selector="toggleCollectionWindowWithSender:" target="3Np-Kd-sBN" id="vZS-Ez-euF"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                            <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="DRN-fu-gQh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="wpr-3q-Mcd">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                        <items>
+                            <menuItem title="Count It Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="3Np-Kd-sBN" id="Lzj-cj-MZu"/>
+            </connections>
+        </menu>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adding a Game</title>
+<style>
+#header {
+	font-size : 35px;
+	font-weight : bold;
+}
+.category {
+	font-size : 25px;
+}
+.note {
+	font-weight : bold;
+}
+</style>
+</head>
+<body>
+	<div id="header">Adding a Game</div>
+	<br/><br/>
+	In order to track the frame rate of a game, it must first be added to Count It.  A game only has to be added once.
+	<br/><br/>
+	From the main menu select "Game" > "Add Game"<br/>(Alternatively, click the "+" icon in the lower left corner of the main window.)
+	<br/><br/><br/>
+	<div>
+		<div class="category">Browse:</div>
+		<div>
+			If you know where the game is located on your computer, you can use the "Browse..." to find the game in the finder and click "Add".
+		</div>
+		<br/><br/>
+		<div>
+			<div class="category">Platform:</div>
+			<div>Use this option to add a game that is managed using a third-party platform.
+				<br/>(Currently supported platforms: Steam, MacGameStore, GOG Galaxy, Battle.net)
+				<br/><br/>After clicking "Platform...", you will be asked to select from a list of the supported platforms that were found on your computer.
+				<br/><br/>Choose a platform and click "Next"
+				<br/>Choose a game(s) from the list of games that were found on your computer from that platform, and click "Add"
+			</div>
+		</div>
+		<br/><br/>
+		<div class="category">Running:</div>
+		<div>
+			This option displays all currently running applications.  This can make it easier to find the game if the game is already running.
+			<br/><br/>
+			After clicking "Running...", a list of all currently running applications will be displayed.  Find the game you are looking for and click "Add".
+		</div>
+		<br/><br/>
+		<div class="category">Drag and Drop:</div>
+		<div>A game(s) can be added by clicking and dragging the game from Finder into the games list of the main window.</div>
+	</div>
+	<br/><br/>
+	<div class="note">
+		Note: If you cannot find the game you are looking for when using the "Running" or "Platform" option, click "Show hidden apps" while viewing the list of games found for that service.  This may be necessary with some games that display a launcher application before the game loads.  Also, only games that are bundled as apps (have the .app extension) can be tracked by Count It.  Games that are compiled as executable files are not supported.
+		<br/><br/>If you cannot find the game using any of the above options:
+		<ol>
+			<li>Launch the game that you want to track</li>
+			<li>cmd-click the game's icon in the dock (the game may have to be in windowed mode in order to get to the dock).  This will show the game in Finder.</li>
+			<li>Drag the game from Finder into the Count It</li>
+		</ol>
+	</div>
+</body>
+</html>

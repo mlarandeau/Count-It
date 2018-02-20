@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/LaRandeau/Projects/Count_It_Github/Count-It/LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/LaRandeau/Projects/Count_It_Github/Count-It/README.md">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

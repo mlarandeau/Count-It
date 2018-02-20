@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>MLaRandeau.Count-It-FPSHelper</string>
+	<key>CFBundleExecutable</key>
+	<string>MLaRandeau.Count-It-FPSHelper</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>CFBundleName</key>
+	<string>MLaRandeau.Count-It-FPSHelper</string>
+	<key>CFBundleDisplayName</key>
+	<string>MLaRandeau.Count-It-FPSHelper</string>
+	<key>SMPrivilegedExecutables</key>
+	<dict>
+		<key>MLaRandeau.Count-It-TraceHelper</key>
+		<string></string>
+	</dict>
+	<key>LSUIElement</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exporting a Recording</title>
+        <style>
+            #header {
+                font-size : 35px;
+                font-weight : bold;
+            }
+        .category {
+            font-size : 25px;
+        }
+        .note {
+            font-weight : bold;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="header">Exporting a Recording</div>
+        <br/><br/>
+        Recordings can be exported in a few different formats that makes it easy to archive and share frame rate data.
+        <br/><br/>
+        To access the export options, select a recording then choose "Recording" > "Export" from the main menu and choose the format you would like the data exported as.  Alternatively, right-click a recording and select "Export" and then choose the desired file format.
+        <br/><br/>
+        <div class="category">as csv:</div>
+        <div>
+            The recording data is exported as a csv (comma separated) file that can be easily opened in any spreadsheet application.  The frame rate is recorded in time intervals, set by the "Sampling Rate" option in the <a href="/pages/preferences/general.html">General</a> tab of the Preferences window.  The sample weight column specifies the number of frame used to calculate the frame rate for that sample.  The absolute maximum, absolute minimum, and absolute average values are based on measuring every single frame.  The sample maximum, sample minimum, and sample average are based on the sample frame rates.
+        </div>
+        <br/><br/>
+        <div class="note">
+            Note: The frame rate of individual frames is not recorded in order to maintain good performance over extended recording sessions.
+            </div>
+        <br/><br/>
+        <div class="category">as png/jpeg:</div>
+        <div>
+            When exported as an image file type, the image is based on the current zoom settings set by the "Zoom" toolbar drop down.  The computer details are included in the exported images.
+        </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recording Preferences</title>
+<style>
+#header {
+	font-size : 35px;
+	font-weight : bold;
+}
+.category {
+	font-size : 25px;
+}
+.note {
+	font-weight : bold;
+}
+</style>
+</head>
+<body>
+	<div id="header">Recording Preferences</div>
+	<div>
+		<br/><br/>
+        <div class="category">Start/Stop Recording Sessions:</div>
+        <ul>
+            <li>Auto start recording:
+                <br/>Tracking the frame rate of a game will also starts a recording session.
+            </li>
+            <li>Enable in game recording with Hotkey
+                <br/>Allows you to use a hotkey to start and stop recording sessions while in a game.
+                The first time this option is selected, you will be prompted to enable Count It as an accessibility app.
+                You must enable it in order for the hotkey option to function.
+                <br/>
+                <br/>
+                The hotkey can be customized but must be a single character.  The hotkey is always prefixed with opt-cmd.
+                <br/>
+                <br/>
+            </li>
+            <li>Display Recording Button in FPS Display:
+                <br/>A button will be placed in the frame rate counter display.  Clicking this button allows you to start
+                and stop a recording session while in a game.
+                <br/>
+                <br/>
+            </li>
+        </ul>
+		<br/>
+		<div>
+			<div class="category">Record Button:</div>
+			<div>
+                By default, a button is placed in the frame rate display that can be used to start and stop a recording session
+                while tracking a game's frame rate.
+			</div>
+			<ul>
+				<li>Primary Color:
+					<br/>Sets the color of the button.  This will also be used as the background color of the FPS display
+                    when "Use for FPS display while recording" is enabled.
+					<br/><br/>
+				</li>
+				<li>Secondary Color:
+					<br/>Sets the border color of the button.  This will also be used as the FPS text color when
+                    "Use for FPS display while recording" is enabled.
+					<br/><br/>
+				</li>
+                <li>Use for FPS display while recording:
+                    <br/>When enabled, these same colors are used to alter the color of the FPS display.  Changing the color of
+                    the FPS display while recording can be useful to make it more obvious that a recording is in process, especially
+                    if "Display Recording Button in FPS Display" is disabled.
+                    <br/><br/>
+                </li>
+			</ul>
+            <div class="note">
+                Note: Depending on how a particular game uses the mouse, this button may be inaccessible.
+                In that case, use the hotkey option above.
+            </div>
+            <br/>
+            <div class="note">
+                Note: Transparency (opacity) can be adjusted using the "opacity" slider when setting the color of the background or the text.
+            </div>
+            <br/>
+            <br/>
+		</div>
+		<div>
+            <div class="category">Auto Export Recordings to:</div>
+            <div>When selected, a csv report of the recording will automatically be created when the recording ends.  A subfolder is created for each game when a report is created</div>
+		</div>
+	</div>
+</body>
+</html>

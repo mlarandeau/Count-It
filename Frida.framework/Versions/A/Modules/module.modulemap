@@ -1,0 +1,11 @@
+framework module Frida {
+  umbrella header "Frida.h"
+
+  export *
+  module * { export * }
+}
+
+module Frida.Swift {
+    header "Frida-Swift.h"
+    requires objc
+}

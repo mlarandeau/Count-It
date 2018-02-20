@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C0A49771F37B39C0037560C /* TraceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A49761F37B39C0037560C /* TraceManager.swift */; };
+		8C0A49791F37B3CF0037560C /* Frida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0A49781F37B3CF0037560C /* Frida.framework */; };
+		8C0A497A1F37B3CF0037560C /* Frida.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0A49781F37B3CF0037560C /* Frida.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C1371121B7AD51300F41089 /* SessionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1371111B7AD51300F41089 /* SessionListController.swift */; };
+		8C1371141B7BCA7A00F41089 /* SessionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1371131B7BCA7A00F41089 /* SessionListCell.swift */; };
+		8C1371171B7C25DD00F41089 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1371161B7C25DD00F41089 /* GraphView.swift */; };
+		8C1449361B0C19DE004802F4 /* SelectServiceSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1449341B0C19DE004802F4 /* SelectServiceSheet.swift */; };
+		8C1449371B0C19DE004802F4 /* SelectServiceSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1449351B0C19DE004802F4 /* SelectServiceSheet.xib */; };
+		8C22EF531BCAB6D800E73DD9 /* GraphImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C22EF521BCAB6D800E73DD9 /* GraphImageGenerator.swift */; };
+		8C26723B1BD29A58004C8E92 /* Resolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26723A1BD29A58004C8E92 /* Resolution.swift */; };
+		8C2672401BD2AA23004C8E92 /* AddResolutionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26723E1BD2AA23004C8E92 /* AddResolutionSheet.swift */; };
+		8C2672411BD2AA23004C8E92 /* AddResolutionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C26723F1BD2AA23004C8E92 /* AddResolutionSheet.xib */; };
+		8C2672441BD2BCF1004C8E92 /* AddGraphicsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2672421BD2BCF1004C8E92 /* AddGraphicsSheet.swift */; };
+		8C2672451BD2BCF1004C8E92 /* AddGraphicsSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C2672431BD2BCF1004C8E92 /* AddGraphicsSheet.xib */; };
+		8C2672471BD2D217004C8E92 /* GraphSysInfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2672461BD2D217004C8E92 /* GraphSysInfoDetails.swift */; };
+		8C4142331BA51C6100986C29 /* GraphSampleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4142321BA51C6100986C29 /* GraphSampleDetails.swift */; };
+		8C4F71F11C76C14000FA9E95 /* FPSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F71F01C76C14000FA9E95 /* FPSDisplay.m */; };
+		8C4F7BD81B405C3A009DA08F /* SystemInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F7BD71B405C3A009DA08F /* SystemInformation.swift */; };
+		8C4F7BDA1B409746009DA08F /* Count_It_Help in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F7BD91B409746009DA08F /* Count_It_Help */; };
+		8C529F6F1BCB3F5F0041BE41 /* SessionExportMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C529F6E1BCB3F5F0041BE41 /* SessionExportMenuDelegate.swift */; };
+		8C6006161AF9B08400B3F770 /* ToolbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6006151AF9B08400B3F770 /* ToolbarController.swift */; };
+		8C68E4251AFAFAC400639F30 /* GameCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68E4241AFAFAC400639F30 /* GameCollection.swift */; };
+		8C6C831E1B8A3283006A7EAE /* GraphController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6C831D1B8A3283006A7EAE /* GraphController.swift */; };
+		8C6D776B1B892E4E00DCFA10 /* GraphHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D776A1B892E4E00DCFA10 /* GraphHeaderView.swift */; };
+		8C6D776D1B892FA800DCFA10 /* GraphContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6D776C1B892FA800DCFA10 /* GraphContentView.swift */; };
+		8C6F1FCB1AEC34FD0016213E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6F1FCA1AEC34FD0016213E /* main.m */; };
+		8C6F1FD11AEC35F80016213E /* MLaRandeau.Count-It-FPSHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C6F1FC81AEC34FD0016213E /* MLaRandeau.Count-It-FPSHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8C6F1FD81AEC52750016213E /* FPSWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6F1FD71AEC52750016213E /* FPSWindowController.m */; };
+		8C6F1FDC1AEC57C20016213E /* AppLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6F1FDB1AEC57C20016213E /* AppLinkController.m */; };
+		8C6F1FDE1AEC5A530016213E /* FPSController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6F1FDD1AEC5A530016213E /* FPSController.swift */; };
+		8C6F1FE71AED81500016213E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6F1FE61AED81500016213E /* AppDelegate.m */; };
+		8C75FA631AF84DFB00E64ED2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75FA621AF84DFB00E64ED2 /* Game.swift */; };
+		8C7C51451AE2CC0500147627 /* AppTracer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51441AE2CC0500147627 /* AppTracer.m */; };
+		8C7C51651AE40AED00147627 /* TraceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51641AE40AED00147627 /* TraceController.swift */; };
+		8C7C51671AE40D0F00147627 /* Supportive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51661AE40D0F00147627 /* Supportive.swift */; };
+		8C7C51691AE42F5900147627 /* libdtrace.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7C51681AE42F5900147627 /* libdtrace.dylib */; };
+		8C7FFB421BA6119D00ADF661 /* GraphPointHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7FFB411BA6119D00ADF661 /* GraphPointHighlight.swift */; };
+		8C903D9D1B2E3C610069C25A /* AppListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C903D9C1B2E3C610069C25A /* AppListCell.swift */; };
+		8C94ECCA1B2FC7C200EB29B1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C94ECC91B2FC7C200EB29B1 /* Session.swift */; };
+		8C94ECCC1B31254800EB29B1 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C94ECCB1B31254800EB29B1 /* Sample.swift */; };
+		8CA9CD431C7165400089A424 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9CD421C7165400089A424 /* RootView.swift */; };
+		8CADF7541B93ACA800D4F226 /* SplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CADF7531B93ACA800D4F226 /* SplitView.swift */; };
+		8CAF3CA11AF5A03B0023C227 /* AppListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF3CA01AF5A03B0023C227 /* AppListController.swift */; };
+		8CB750B51BEECC9A006CAFE1 /* ShareMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB750B41BEECC9A006CAFE1 /* ShareMenuDelegate.swift */; };
+		8CBAF2EC1D45A2CD00D4BDD9 /* FPSRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBAF2EA1D459E7300D4BDD9 /* FPSRecordButton.m */; };
+		8CBAF2EF1D45B32C00D4BDD9 /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBAF2EE1D45B32C00D4BDD9 /* FPSLabel.m */; };
+		8CBFA26A1ADAC86A00FB2B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFA2691ADAC86A00FB2B44 /* AppDelegate.swift */; };
+		8CBFA26C1ADAC86B00FB2B44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBFA26B1ADAC86B00FB2B44 /* Images.xcassets */; };
+		8CBFA26F1ADAC86B00FB2B44 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CBFA26D1ADAC86B00FB2B44 /* MainMenu.xib */; };
+		8CBFA2861ADAC98F00FB2B44 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFA2841ADAC98F00FB2B44 /* MainWindow.swift */; };
+		8CBFA2871ADAC98F00FB2B44 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CBFA2851ADAC98F00FB2B44 /* MainWindow.xib */; };
+		8CBFA2941ADAD11000FB2B44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFA2931ADAD11000FB2B44 /* main.m */; };
+		8CBFA2A81ADB007700FB2B44 /* MLaRandeau.Count-It-TraceHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8CBFA2911ADAD11000FB2B44 /* MLaRandeau.Count-It-TraceHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CC014281B08F15000C0EFAE /* AddNewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC014261B08F15000C0EFAE /* AddNewSheet.swift */; };
+		8CC014291B08F15000C0EFAE /* AddNewSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC014271B08F15000C0EFAE /* AddNewSheet.xib */; };
+		8CC0142B1B09368600C0EFAE /* AddNewListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0142A1B09368600C0EFAE /* AddNewListController.swift */; };
+		8CC743F71F254396007CAA4A /* AttachToProcessSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC743F51F254396007CAA4A /* AttachToProcessSheet.swift */; };
+		8CC743F81F254396007CAA4A /* AttachToProcessSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CC743F61F254396007CAA4A /* AttachToProcessSheet.xib */; };
+		8CD0FE211B01AB3B00CAE106 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0FE201B01AB3B00CAE106 /* AppListView.swift */; };
+		8CE57BC11B1125D000CB79EA /* VDFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE57BC01B1125D000CB79EA /* VDFParser.swift */; };
+		8CE57BC71B1274BA00CB79EA /* SQLiteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE57BC61B1274BA00CB79EA /* SQLiteController.m */; };
+		8CE57BC91B1275B000CB79EA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE57BC81B1275B000CB79EA /* libsqlite3.dylib */; };
+		8CEE53631B3EE219007E7886 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEE53621B3EE219007E7886 /* MainMenuController.swift */; };
+		8CEE53651B3F2C86007E7886 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8CEE53641B3F2C86007E7886 /* Credits.rtf */; };
+		8CEF78711B19FE6400A05A32 /* PreferenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEF786F1B19FE6400A05A32 /* PreferenceController.swift */; };
+		8CEF78721B19FE6400A05A32 /* PreferenceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CEF78701B19FE6400A05A32 /* PreferenceController.xib */; };
+		8CF7CAFF1F37BCE70015EAA0 /* FridaTraceScript.js in Resources */ = {isa = PBXBuildFile; fileRef = 8CF7CAFE1F37BCE70015EAA0 /* FridaTraceScript.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C6F1FCF1AEC35D00016213E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CBFA25C1ADAC86900FB2B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C6F1FC71AEC34FD0016213E;
+			remoteInfo = "MLaRandeau.Count-It-FPSHelper";
+		};
+		8CBFA2A61ADB007000FB2B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CBFA25C1ADAC86900FB2B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CBFA2901ADAD11000FB2B44;
+			remoteInfo = Count_It_TraceHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C0A497B1F37B3CF0037560C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C0A497A1F37B3CF0037560C /* Frida.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6F1FA61AEC014E0016213E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				8C6F1FD11AEC35F80016213E /* MLaRandeau.Count-It-FPSHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6F1FC61AEC34FD0016213E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8CBFA28F1ADAD11000FB2B44 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8CBFA29A1ADAD1C500FB2B44 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				8CBFA2A81ADB007700FB2B44 /* MLaRandeau.Count-It-TraceHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C0A49761F37B39C0037560C /* TraceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceManager.swift; sourceTree = "<group>"; };
+		8C0A49781F37B3CF0037560C /* Frida.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Frida.framework; sourceTree = "<group>"; };
+		8C1371111B7AD51300F41089 /* SessionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListController.swift; sourceTree = "<group>"; };
+		8C1371131B7BCA7A00F41089 /* SessionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListCell.swift; sourceTree = "<group>"; };
+		8C1371161B7C25DD00F41089 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		8C1449341B0C19DE004802F4 /* SelectServiceSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectServiceSheet.swift; sourceTree = "<group>"; };
+		8C1449351B0C19DE004802F4 /* SelectServiceSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectServiceSheet.xib; sourceTree = "<group>"; };
+		8C22EF521BCAB6D800E73DD9 /* GraphImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphImageGenerator.swift; sourceTree = "<group>"; };
+		8C26723A1BD29A58004C8E92 /* Resolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolution.swift; sourceTree = "<group>"; };
+		8C26723E1BD2AA23004C8E92 /* AddResolutionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddResolutionSheet.swift; sourceTree = "<group>"; };
+		8C26723F1BD2AA23004C8E92 /* AddResolutionSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddResolutionSheet.xib; sourceTree = "<group>"; };
+		8C2672421BD2BCF1004C8E92 /* AddGraphicsSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGraphicsSheet.swift; sourceTree = "<group>"; };
+		8C2672431BD2BCF1004C8E92 /* AddGraphicsSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGraphicsSheet.xib; sourceTree = "<group>"; };
+		8C2672461BD2D217004C8E92 /* GraphSysInfoDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphSysInfoDetails.swift; sourceTree = "<group>"; };
+		8C4142321BA51C6100986C29 /* GraphSampleDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphSampleDetails.swift; sourceTree = "<group>"; };
+		8C4F71EF1C76C14000FA9E95 /* FPSDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSDisplay.h; sourceTree = "<group>"; };
+		8C4F71F01C76C14000FA9E95 /* FPSDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSDisplay.m; sourceTree = "<group>"; };
+		8C4F7BD71B405C3A009DA08F /* SystemInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemInformation.swift; sourceTree = "<group>"; };
+		8C4F7BD91B409746009DA08F /* Count_It_Help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Count_It_Help; sourceTree = "<group>"; };
+		8C529F6E1BCB3F5F0041BE41 /* SessionExportMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionExportMenuDelegate.swift; sourceTree = "<group>"; };
+		8C6006151AF9B08400B3F770 /* ToolbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarController.swift; sourceTree = "<group>"; };
+		8C68E4241AFAFAC400639F30 /* GameCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCollection.swift; sourceTree = "<group>"; };
+		8C6C831D1B8A3283006A7EAE /* GraphController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphController.swift; sourceTree = "<group>"; };
+		8C6D776A1B892E4E00DCFA10 /* GraphHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphHeaderView.swift; sourceTree = "<group>"; };
+		8C6D776C1B892FA800DCFA10 /* GraphContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphContentView.swift; sourceTree = "<group>"; };
+		8C6F1FC81AEC34FD0016213E /* MLaRandeau.Count-It-FPSHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MLaRandeau.Count-It-FPSHelper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6F1FCA1AEC34FD0016213E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C6F1FD21AEC36850016213E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6F1FD61AEC52750016213E /* FPSWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSWindowController.h; sourceTree = "<group>"; };
+		8C6F1FD71AEC52750016213E /* FPSWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSWindowController.m; sourceTree = "<group>"; };
+		8C6F1FDA1AEC57C20016213E /* AppLinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLinkController.h; sourceTree = "<group>"; };
+		8C6F1FDB1AEC57C20016213E /* AppLinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppLinkController.m; sourceTree = "<group>"; };
+		8C6F1FDD1AEC5A530016213E /* FPSController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPSController.swift; sourceTree = "<group>"; };
+		8C6F1FDF1AED39BE0016213E /* AppLinkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLinkProtocol.h; sourceTree = "<group>"; };
+		8C6F1FE01AED39D20016213E /* FPSControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPSControllerProtocol.h; sourceTree = "<group>"; };
+		8C6F1FE11AED7BB60016213E /* AppTracerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppTracerProtocol.h; sourceTree = "<group>"; };
+		8C6F1FE21AED7D690016213E /* TraceControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraceControllerProtocol.h; sourceTree = "<group>"; };
+		8C6F1FE51AED81500016213E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C6F1FE61AED81500016213E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C75FA621AF84DFB00E64ED2 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		8C7C51431AE2CC0500147627 /* AppTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppTracer.h; path = Count_It_TraceHelper/AppTracer.h; sourceTree = SOURCE_ROOT; };
+		8C7C51441AE2CC0500147627 /* AppTracer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTracer.m; sourceTree = "<group>"; };
+		8C7C51471AE2EA7700147627 /* Count_It-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Count_It-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C7C51641AE40AED00147627 /* TraceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceController.swift; sourceTree = "<group>"; };
+		8C7C51661AE40D0F00147627 /* Supportive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supportive.swift; sourceTree = "<group>"; };
+		8C7C51681AE42F5900147627 /* libdtrace.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libdtrace.dylib; path = usr/lib/libdtrace.dylib; sourceTree = SDKROOT; };
+		8C7FFB411BA6119D00ADF661 /* GraphPointHighlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphPointHighlight.swift; sourceTree = "<group>"; };
+		8C903D9C1B2E3C610069C25A /* AppListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListCell.swift; sourceTree = "<group>"; };
+		8C94ECC91B2FC7C200EB29B1 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		8C94ECCB1B31254800EB29B1 /* Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
+		8CA9CD421C7165400089A424 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8CADF7531B93ACA800D4F226 /* SplitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitView.swift; sourceTree = "<group>"; };
+		8CAF3CA01AF5A03B0023C227 /* AppListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListController.swift; sourceTree = "<group>"; };
+		8CB750B41BEECC9A006CAFE1 /* ShareMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareMenuDelegate.swift; sourceTree = "<group>"; };
+		8CBAF2E91D459E7300D4BDD9 /* FPSRecordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSRecordButton.h; sourceTree = "<group>"; };
+		8CBAF2EA1D459E7300D4BDD9 /* FPSRecordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSRecordButton.m; sourceTree = "<group>"; };
+		8CBAF2ED1D45B32C00D4BDD9 /* FPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabel.h; sourceTree = "<group>"; };
+		8CBAF2EE1D45B32C00D4BDD9 /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
+		8CBFA2641ADAC86900FB2B44 /* Count It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Count It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBFA2681ADAC86A00FB2B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CBFA2691ADAC86A00FB2B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CBFA26B1ADAC86B00FB2B44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CBFA26E1ADAC86B00FB2B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8CBFA2841ADAC98F00FB2B44 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		8CBFA2851ADAC98F00FB2B44 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		8CBFA2911ADAD11000FB2B44 /* MLaRandeau.Count-It-TraceHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MLaRandeau.Count-It-TraceHelper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBFA2931ADAD11000FB2B44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CBFA29C1ADAD67000FB2B44 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CBFA29D1ADAD82900FB2B44 /* Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
+		8CC014261B08F15000C0EFAE /* AddNewSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewSheet.swift; sourceTree = "<group>"; };
+		8CC014271B08F15000C0EFAE /* AddNewSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewSheet.xib; sourceTree = "<group>"; };
+		8CC0142A1B09368600C0EFAE /* AddNewListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewListController.swift; sourceTree = "<group>"; };
+		8CC743F51F254396007CAA4A /* AttachToProcessSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachToProcessSheet.swift; sourceTree = "<group>"; };
+		8CC743F61F254396007CAA4A /* AttachToProcessSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachToProcessSheet.xib; sourceTree = "<group>"; };
+		8CD0FE201B01AB3B00CAE106 /* AppListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
+		8CE57BC01B1125D000CB79EA /* VDFParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VDFParser.swift; sourceTree = "<group>"; };
+		8CE57BC51B1274BA00CB79EA /* SQLiteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteController.h; sourceTree = "<group>"; };
+		8CE57BC61B1274BA00CB79EA /* SQLiteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteController.m; sourceTree = "<group>"; };
+		8CE57BC81B1275B000CB79EA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8CEE53621B3EE219007E7886 /* MainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		8CEE53641B3F2C86007E7886 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		8CEF786F1B19FE6400A05A32 /* PreferenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceController.swift; sourceTree = "<group>"; };
+		8CEF78701B19FE6400A05A32 /* PreferenceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferenceController.xib; sourceTree = "<group>"; };
+		8CF7CAFE1F37BCE70015EAA0 /* FridaTraceScript.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = FridaTraceScript.js; sourceTree = "<group>"; };
+		8CFC3D012038BEEA00CDC134 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8CFC3D032038BEF500CDC134 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8CFC3D052038BF3100CDC134 /* Helper Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Helper Scripts"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C6F1FC51AEC34FD0016213E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBFA2611ADAC86900FB2B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE57BC91B1275B000CB79EA /* libsqlite3.dylib in Frameworks */,
+				8C0A49791F37B3CF0037560C /* Frida.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBFA28E1ADAD11000FB2B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7C51691AE42F5900147627 /* libdtrace.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C1371151B7BCA8900F41089 /* SessionList */ = {
+			isa = PBXGroup;
+			children = (
+				8C1371131B7BCA7A00F41089 /* SessionListCell.swift */,
+				8C1371111B7AD51300F41089 /* SessionListController.swift */,
+				8C529F6E1BCB3F5F0041BE41 /* SessionExportMenuDelegate.swift */,
+			);
+			name = SessionList;
+			sourceTree = "<group>";
+		};
+		8C1371181B7C25F900F41089 /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				8C6C831D1B8A3283006A7EAE /* GraphController.swift */,
+				8C1371161B7C25DD00F41089 /* GraphView.swift */,
+				8C6D776A1B892E4E00DCFA10 /* GraphHeaderView.swift */,
+				8C6D776C1B892FA800DCFA10 /* GraphContentView.swift */,
+				8C4142321BA51C6100986C29 /* GraphSampleDetails.swift */,
+				8C7FFB411BA6119D00ADF661 /* GraphPointHighlight.swift */,
+				8C22EF521BCAB6D800E73DD9 /* GraphImageGenerator.swift */,
+				8C2672461BD2D217004C8E92 /* GraphSysInfoDetails.swift */,
+			);
+			name = GraphView;
+			sourceTree = "<group>";
+		};
+		8C1449381B0C19F3004802F4 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0142A1B09368600C0EFAE /* AddNewListController.swift */,
+				8CC014261B08F15000C0EFAE /* AddNewSheet.swift */,
+				8C1449341B0C19DE004802F4 /* SelectServiceSheet.swift */,
+				8C26723E1BD2AA23004C8E92 /* AddResolutionSheet.swift */,
+				8C2672421BD2BCF1004C8E92 /* AddGraphicsSheet.swift */,
+				8CC743F51F254396007CAA4A /* AttachToProcessSheet.swift */,
+				8CE57BC01B1125D000CB79EA /* VDFParser.swift */,
+				8CE57BC61B1274BA00CB79EA /* SQLiteController.m */,
+			);
+			name = Sheets;
+			sourceTree = "<group>";
+		};
+		8C6F1FA41AEC010E0016213E /* Trace Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8C6F1FE11AED7BB60016213E /* AppTracerProtocol.h */,
+				8C6F1FE21AED7D690016213E /* TraceControllerProtocol.h */,
+			);
+			name = "Trace Helper";
+			sourceTree = "<group>";
+		};
+		8C6F1FC91AEC34FD0016213E /* Count_It_FPSHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8C6F1FE51AED81500016213E /* AppDelegate.h */,
+				8C6F1FE61AED81500016213E /* AppDelegate.m */,
+				8C6F1FD61AEC52750016213E /* FPSWindowController.h */,
+				8C6F1FD71AEC52750016213E /* FPSWindowController.m */,
+				8C4F71EF1C76C14000FA9E95 /* FPSDisplay.h */,
+				8C4F71F01C76C14000FA9E95 /* FPSDisplay.m */,
+				8CBAF2ED1D45B32C00D4BDD9 /* FPSLabel.h */,
+				8CBAF2EE1D45B32C00D4BDD9 /* FPSLabel.m */,
+				8CBAF2E91D459E7300D4BDD9 /* FPSRecordButton.h */,
+				8CBAF2EA1D459E7300D4BDD9 /* FPSRecordButton.m */,
+				8C6F1FDA1AEC57C20016213E /* AppLinkController.h */,
+				8C6F1FDB1AEC57C20016213E /* AppLinkController.m */,
+				8C6F1FCA1AEC34FD0016213E /* main.m */,
+				8C6F1FD21AEC36850016213E /* Info.plist */,
+			);
+			path = Count_It_FPSHelper;
+			sourceTree = "<group>";
+		};
+		8C6F1FE31AED80570016213E /* FPS Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8C6F1FDF1AED39BE0016213E /* AppLinkProtocol.h */,
+				8C6F1FE01AED39D20016213E /* FPSControllerProtocol.h */,
+			);
+			name = "FPS Helper";
+			sourceTree = "<group>";
+		};
+		8C6F1FE41AED807E0016213E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CBFA29D1ADAD82900FB2B44 /* Launchd.plist */,
+				8CBFA29C1ADAD67000FB2B44 /* Info.plist */,
+				8C7C51681AE42F5900147627 /* libdtrace.dylib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C7C51461AE2EA2200147627 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				8C6F1FE31AED80570016213E /* FPS Helper */,
+				8C6F1FA41AEC010E0016213E /* Trace Helper */,
+				8CE57BC51B1274BA00CB79EA /* SQLiteController.h */,
+				8C7C51471AE2EA7700147627 /* Count_It-Bridging-Header.h */,
+			);
+			name = Interfaces;
+			path = Count_It;
+			sourceTree = "<group>";
+		};
+		8C94ECC81B2FC78B00EB29B1 /* AppList */ = {
+			isa = PBXGroup;
+			children = (
+				8CD0FE201B01AB3B00CAE106 /* AppListView.swift */,
+				8C903D9C1B2E3C610069C25A /* AppListCell.swift */,
+				8CAF3CA01AF5A03B0023C227 /* AppListController.swift */,
+			);
+			name = AppList;
+			sourceTree = "<group>";
+		};
+		8CAF3C9F1AF59A9A0023C227 /* Helper Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51641AE40AED00147627 /* TraceController.swift */,
+				8C0A49761F37B39C0037560C /* TraceManager.swift */,
+				8C6F1FDD1AEC5A530016213E /* FPSController.swift */,
+				8CF7CAFE1F37BCE70015EAA0 /* FridaTraceScript.js */,
+			);
+			name = "Helper Controllers";
+			sourceTree = "<group>";
+		};
+		8CAF3CA21AF5A0590023C227 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				8CBFA26D1ADAC86B00FB2B44 /* MainMenu.xib */,
+				8CEF78701B19FE6400A05A32 /* PreferenceController.xib */,
+				8CBFA2851ADAC98F00FB2B44 /* MainWindow.xib */,
+				8CC014271B08F15000C0EFAE /* AddNewSheet.xib */,
+				8C1449351B0C19DE004802F4 /* SelectServiceSheet.xib */,
+				8C26723F1BD2AA23004C8E92 /* AddResolutionSheet.xib */,
+				8C2672431BD2BCF1004C8E92 /* AddGraphicsSheet.xib */,
+				8CC743F61F254396007CAA4A /* AttachToProcessSheet.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		8CBFA25B1ADAC86900FB2B44 = {
+			isa = PBXGroup;
+			children = (
+				8C7C51461AE2EA2200147627 /* Interfaces */,
+				8CBFA2661ADAC86900FB2B44 /* Count_It */,
+				8CBFA2921ADAD11000FB2B44 /* Count_It_TraceHelper */,
+				8C6F1FC91AEC34FD0016213E /* Count_It_FPSHelper */,
+				8C0A49781F37B3CF0037560C /* Frida.framework */,
+				8CBFA2651ADAC86900FB2B44 /* Products */,
+				8CFC3D052038BF3100CDC134 /* Helper Scripts */,
+				8CFC3D032038BEF500CDC134 /* README.md */,
+				8CFC3D012038BEEA00CDC134 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		8CBFA2651ADAC86900FB2B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CBFA2641ADAC86900FB2B44 /* Count It.app */,
+				8CBFA2911ADAD11000FB2B44 /* MLaRandeau.Count-It-TraceHelper */,
+				8C6F1FC81AEC34FD0016213E /* MLaRandeau.Count-It-FPSHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CBFA2661ADAC86900FB2B44 /* Count_It */ = {
+			isa = PBXGroup;
+			children = (
+				8CA9CD421C7165400089A424 /* RootView.swift */,
+				8CBFA2691ADAC86A00FB2B44 /* AppDelegate.swift */,
+				8CEE53621B3EE219007E7886 /* MainMenuController.swift */,
+				8CB750B41BEECC9A006CAFE1 /* ShareMenuDelegate.swift */,
+				8CEF786F1B19FE6400A05A32 /* PreferenceController.swift */,
+				8C6006151AF9B08400B3F770 /* ToolbarController.swift */,
+				8CBFA2841ADAC98F00FB2B44 /* MainWindow.swift */,
+				8CADF7531B93ACA800D4F226 /* SplitView.swift */,
+				8CAF3C9F1AF59A9A0023C227 /* Helper Controllers */,
+				8C1449381B0C19F3004802F4 /* Sheets */,
+				8C94ECC81B2FC78B00EB29B1 /* AppList */,
+				8C1371151B7BCA8900F41089 /* SessionList */,
+				8C1371181B7C25F900F41089 /* GraphView */,
+				8C68E4241AFAFAC400639F30 /* GameCollection.swift */,
+				8C75FA621AF84DFB00E64ED2 /* Game.swift */,
+				8C26723A1BD29A58004C8E92 /* Resolution.swift */,
+				8C94ECC91B2FC7C200EB29B1 /* Session.swift */,
+				8C94ECCB1B31254800EB29B1 /* Sample.swift */,
+				8C4F7BD71B405C3A009DA08F /* SystemInformation.swift */,
+				8C7C51661AE40D0F00147627 /* Supportive.swift */,
+				8CAF3CA21AF5A0590023C227 /* XIB */,
+				8CBFA26B1ADAC86B00FB2B44 /* Images.xcassets */,
+				8CBFA2671ADAC86A00FB2B44 /* Supporting Files */,
+				8CE57BC81B1275B000CB79EA /* libsqlite3.dylib */,
+			);
+			path = Count_It;
+			sourceTree = "<group>";
+		};
+		8CBFA2671ADAC86A00FB2B44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F7BD91B409746009DA08F /* Count_It_Help */,
+				8CBFA2681ADAC86A00FB2B44 /* Info.plist */,
+				8CEE53641B3F2C86007E7886 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CBFA2921ADAD11000FB2B44 /* Count_It_TraceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51431AE2CC0500147627 /* AppTracer.h */,
+				8C7C51441AE2CC0500147627 /* AppTracer.m */,
+				8CBFA2931ADAD11000FB2B44 /* main.m */,
+				8C6F1FE41AED807E0016213E /* Supporting Files */,
+			);
+			path = Count_It_TraceHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C6F1FC71AEC34FD0016213E /* MLaRandeau.Count-It-FPSHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6F1FCC1AEC34FD0016213E /* Build configuration list for PBXNativeTarget "MLaRandeau.Count-It-FPSHelper" */;
+			buildPhases = (
+				8C6F1FC41AEC34FD0016213E /* Sources */,
+				8C6F1FC51AEC34FD0016213E /* Frameworks */,
+				8C6F1FC61AEC34FD0016213E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MLaRandeau.Count-It-FPSHelper";
+			productName = Count_It_FPSHelper;
+			productReference = 8C6F1FC81AEC34FD0016213E /* MLaRandeau.Count-It-FPSHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		8CBFA2631ADAC86900FB2B44 /* Count_It */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBFA27E1ADAC86D00FB2B44 /* Build configuration list for PBXNativeTarget "Count_It" */;
+			buildPhases = (
+				8CBFA2601ADAC86900FB2B44 /* Sources */,
+				8CBFA2611ADAC86900FB2B44 /* Frameworks */,
+				8CBFA2621ADAC86900FB2B44 /* Resources */,
+				8CBFA29A1ADAD1C500FB2B44 /* CopyFiles */,
+				8C6F1FA61AEC014E0016213E /* CopyFiles */,
+				8C0A497B1F37B3CF0037560C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C6F1FD01AEC35D00016213E /* PBXTargetDependency */,
+				8CBFA2A71ADB007000FB2B44 /* PBXTargetDependency */,
+			);
+			name = Count_It;
+			productName = Count_It;
+			productReference = 8CBFA2641ADAC86900FB2B44 /* Count It.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CBFA2901ADAD11000FB2B44 /* MLaRandeau.Count-It-TraceHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBFA2951ADAD11000FB2B44 /* Build configuration list for PBXNativeTarget "MLaRandeau.Count-It-TraceHelper" */;
+			buildPhases = (
+				8CBFA28D1ADAD11000FB2B44 /* Sources */,
+				8CBFA28E1ADAD11000FB2B44 /* Frameworks */,
+				8CBFA28F1ADAD11000FB2B44 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MLaRandeau.Count-It-TraceHelper";
+			productName = Count_It_TraceHelper;
+			productReference = 8CBFA2911ADAD11000FB2B44 /* MLaRandeau.Count-It-TraceHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CBFA25C1ADAC86900FB2B44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Michael LaRandeau";
+				TargetAttributes = {
+					8C6F1FC71AEC34FD0016213E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					8CBFA2631ADAC86900FB2B44 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = TKX72LE66S;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+					};
+					8CBFA2901ADAD11000FB2B44 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 8CBFA25F1ADAC86900FB2B44 /* Build configuration list for PBXProject "Count_It" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CBFA25B1ADAC86900FB2B44;
+			productRefGroup = 8CBFA2651ADAC86900FB2B44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CBFA2631ADAC86900FB2B44 /* Count_It */,
+				8CBFA2901ADAD11000FB2B44 /* MLaRandeau.Count-It-TraceHelper */,
+				8C6F1FC71AEC34FD0016213E /* MLaRandeau.Count-It-FPSHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CBFA2621ADAC86900FB2B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBFA26C1ADAC86B00FB2B44 /* Images.xcassets in Resources */,
+				8CEF78721B19FE6400A05A32 /* PreferenceController.xib in Resources */,
+				8C4F7BDA1B409746009DA08F /* Count_It_Help in Resources */,
+				8CBFA26F1ADAC86B00FB2B44 /* MainMenu.xib in Resources */,
+				8CF7CAFF1F37BCE70015EAA0 /* FridaTraceScript.js in Resources */,
+				8C2672411BD2AA23004C8E92 /* AddResolutionSheet.xib in Resources */,
+				8CEE53651B3F2C86007E7886 /* Credits.rtf in Resources */,
+				8CC743F81F254396007CAA4A /* AttachToProcessSheet.xib in Resources */,
+				8C2672451BD2BCF1004C8E92 /* AddGraphicsSheet.xib in Resources */,
+				8CC014291B08F15000C0EFAE /* AddNewSheet.xib in Resources */,
+				8CBFA2871ADAC98F00FB2B44 /* MainWindow.xib in Resources */,
+				8C1449371B0C19DE004802F4 /* SelectServiceSheet.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C6F1FC41AEC34FD0016213E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBAF2EC1D45A2CD00D4BDD9 /* FPSRecordButton.m in Sources */,
+				8C4F71F11C76C14000FA9E95 /* FPSDisplay.m in Sources */,
+				8C6F1FE71AED81500016213E /* AppDelegate.m in Sources */,
+				8C6F1FDC1AEC57C20016213E /* AppLinkController.m in Sources */,
+				8C6F1FCB1AEC34FD0016213E /* main.m in Sources */,
+				8CBAF2EF1D45B32C00D4BDD9 /* FPSLabel.m in Sources */,
+				8C6F1FD81AEC52750016213E /* FPSWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBFA2601ADAC86900FB2B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7FFB421BA6119D00ADF661 /* GraphPointHighlight.swift in Sources */,
+				8CC743F71F254396007CAA4A /* AttachToProcessSheet.swift in Sources */,
+				8C1371171B7C25DD00F41089 /* GraphView.swift in Sources */,
+				8CADF7541B93ACA800D4F226 /* SplitView.swift in Sources */,
+				8CC0142B1B09368600C0EFAE /* AddNewListController.swift in Sources */,
+				8C903D9D1B2E3C610069C25A /* AppListCell.swift in Sources */,
+				8C2672441BD2BCF1004C8E92 /* AddGraphicsSheet.swift in Sources */,
+				8CA9CD431C7165400089A424 /* RootView.swift in Sources */,
+				8C4F7BD81B405C3A009DA08F /* SystemInformation.swift in Sources */,
+				8C22EF531BCAB6D800E73DD9 /* GraphImageGenerator.swift in Sources */,
+				8C6D776D1B892FA800DCFA10 /* GraphContentView.swift in Sources */,
+				8CC014281B08F15000C0EFAE /* AddNewSheet.swift in Sources */,
+				8CAF3CA11AF5A03B0023C227 /* AppListController.swift in Sources */,
+				8C1371121B7AD51300F41089 /* SessionListController.swift in Sources */,
+				8C0A49771F37B39C0037560C /* TraceManager.swift in Sources */,
+				8CE57BC11B1125D000CB79EA /* VDFParser.swift in Sources */,
+				8CBFA2861ADAC98F00FB2B44 /* MainWindow.swift in Sources */,
+				8CBFA26A1ADAC86A00FB2B44 /* AppDelegate.swift in Sources */,
+				8C6006161AF9B08400B3F770 /* ToolbarController.swift in Sources */,
+				8C26723B1BD29A58004C8E92 /* Resolution.swift in Sources */,
+				8C94ECCA1B2FC7C200EB29B1 /* Session.swift in Sources */,
+				8CB750B51BEECC9A006CAFE1 /* ShareMenuDelegate.swift in Sources */,
+				8C529F6F1BCB3F5F0041BE41 /* SessionExportMenuDelegate.swift in Sources */,
+				8CD0FE211B01AB3B00CAE106 /* AppListView.swift in Sources */,
+				8C94ECCC1B31254800EB29B1 /* Sample.swift in Sources */,
+				8CEF78711B19FE6400A05A32 /* PreferenceController.swift in Sources */,
+				8C4142331BA51C6100986C29 /* GraphSampleDetails.swift in Sources */,
+				8C6D776B1B892E4E00DCFA10 /* GraphHeaderView.swift in Sources */,
+				8C7C51671AE40D0F00147627 /* Supportive.swift in Sources */,
+				8C1449361B0C19DE004802F4 /* SelectServiceSheet.swift in Sources */,
+				8C1371141B7BCA7A00F41089 /* SessionListCell.swift in Sources */,
+				8C6F1FDE1AEC5A530016213E /* FPSController.swift in Sources */,
+				8CEE53631B3EE219007E7886 /* MainMenuController.swift in Sources */,
+				8C6C831E1B8A3283006A7EAE /* GraphController.swift in Sources */,
+				8C68E4251AFAFAC400639F30 /* GameCollection.swift in Sources */,
+				8C2672471BD2D217004C8E92 /* GraphSysInfoDetails.swift in Sources */,
+				8C7C51651AE40AED00147627 /* TraceController.swift in Sources */,
+				8C2672401BD2AA23004C8E92 /* AddResolutionSheet.swift in Sources */,
+				8C75FA631AF84DFB00E64ED2 /* Game.swift in Sources */,
+				8CE57BC71B1274BA00CB79EA /* SQLiteController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBFA28D1ADAD11000FB2B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7C51451AE2CC0500147627 /* AppTracer.m in Sources */,
+				8CBFA2941ADAD11000FB2B44 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C6F1FD01AEC35D00016213E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C6F1FC71AEC34FD0016213E /* MLaRandeau.Count-It-FPSHelper */;
+			targetProxy = 8C6F1FCF1AEC35D00016213E /* PBXContainerItemProxy */;
+		};
+		8CBFA2A71ADB007000FB2B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CBFA2901ADAD11000FB2B44 /* MLaRandeau.Count-It-TraceHelper */;
+			targetProxy = 8CBFA2A61ADB007000FB2B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CBFA26D1ADAC86B00FB2B44 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CBFA26E1ADAC86B00FB2B44 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C6F1FCD1AEC34FD0016213E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					Count_It_FPSHelper/Info.plist,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8C6F1FCE1AEC34FD0016213E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					Count_It_FPSHelper/Info.plist,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8CBFA27C1ADAC86D00FB2B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CBFA27D1ADAC86D00FB2B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		8CBFA27F1ADAC86D00FB2B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = TKX72LE66S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Count_It/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "MLaRandeau.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Count It";
+				SWIFT_OBJC_BRIDGING_HEADER = "Count_It/Count_It-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		8CBFA2801ADAC86D00FB2B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = TKX72LE66S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Count_It/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "MLaRandeau.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Count It";
+				SWIFT_OBJC_BRIDGING_HEADER = "Count_It/Count_It-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		8CBFA2961ADAD11000FB2B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					Count_It_TraceHelper/Info.plist,
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					Count_It_TraceHelper/Launchd.plist,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8CBFA2971ADAD11000FB2B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					Count_It_TraceHelper/Info.plist,
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					Count_It_TraceHelper/Launchd.plist,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C6F1FCC1AEC34FD0016213E /* Build configuration list for PBXNativeTarget "MLaRandeau.Count-It-FPSHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6F1FCD1AEC34FD0016213E /* Debug */,
+				8C6F1FCE1AEC34FD0016213E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBFA25F1ADAC86900FB2B44 /* Build configuration list for PBXProject "Count_It" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBFA27C1ADAC86D00FB2B44 /* Debug */,
+				8CBFA27D1ADAC86D00FB2B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBFA27E1ADAC86D00FB2B44 /* Build configuration list for PBXNativeTarget "Count_It" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBFA27F1ADAC86D00FB2B44 /* Debug */,
+				8CBFA2801ADAC86D00FB2B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBFA2951ADAD11000FB2B44 /* Build configuration list for PBXNativeTarget "MLaRandeau.Count-It-TraceHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBFA2961ADAD11000FB2B44 /* Debug */,
+				8CBFA2971ADAD11000FB2B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CBFA25C1ADAC86900FB2B44 /* Project object */;
+}
